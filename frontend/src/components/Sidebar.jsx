@@ -28,9 +28,9 @@ const Sidebar = () => {
         <NavLink to="/select-variables">Variables</NavLink>
         <NavLink to="/results">Results</NavLink>
         <NavLink to="/solar-dashboard">Solar Dashboard</NavLink>
-        <NavLink to="/detailed-analysis">Detailed Analysis</NavLink>
+        {/* <NavLink to="/detailed-analysis">Detailed Analysis</NavLink>
         <NavLink to="/historical-trends">Historical Trends</NavLink>
-        <NavLink to="/my-dashboard">My Dashboard</NavLink>
+        <NavLink to="/my-dashboard">My Dashboard</NavLink> */}
         <NavLink to="/about">About</NavLink>
       </nav>
     </div>

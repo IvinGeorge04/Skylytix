@@ -8,9 +8,9 @@ import LocationDatePage from './pages/LocationDatePage';
 import VariablesPage from './pages/VariablesPage';
 import ResultsPage from './pages/ResultsPage';
 import SolarDashboardPage from './pages/SolarDashboardPage';
-import DetailedAnalysisPage from './pages/DetailedAnalysisPage';
-import HistoricalTrendsPage from './pages/HistoricalTrendsPage';
-import MyDashboardPage from './pages/MyDashboardPage';
+// import DetailedAnalysisPage from './pages/DetailedAnalysisPage';
+// import HistoricalTrendsPage from './pages/HistoricalTrendsPage';
+// import MyDashboardPage from './pages/MyDashboardPage';
 import AboutPage from './pages/AboutPage';
 
 function App() {
@@ -26,9 +26,9 @@ function App() {
             <Route path="/select-variables" element={<VariablesPage />} />
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/solar-dashboard" element={<SolarDashboardPage />} />
-            <Route path="/detailed-analysis" element={<DetailedAnalysisPage />} />
+            {/* <Route path="/detailed-analysis" element={<DetailedAnalysisPage />} />
             <Route path="/historical-trends" element={<HistoricalTrendsPage />} />
-            <Route path="/my-dashboard" element={<MyDashboardPage />} />
+            <Route path="/my-dashboard" element={<MyDashboardPage />} /> */}
             <Route path="/about" element={<AboutPage />} />
           </Routes>
         </main>
