@@ -1,0 +1,129 @@
+/* src/pages/SolarDashboardPage.css */
+.solar-dashboard-page .page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.solar-dashboard-page h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #c28d0a;
+  margin-bottom: 0.5rem;
+}
+.solar-dashboard-page .page-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.solar-card {
+  background: linear-gradient(145deg, #ffffff, #f7f7f7);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f0f0f0;
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.solar-title::before, .uv-title::before {
+  content: ' ';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.solar-title::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>');
+}
+.uv-title::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>');
+}
+.radiation-box {
+  background-color: #fffaf0;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ffe8c5;
+}
+.radiation-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+.radiation-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0.25rem;
+}
+.solar-note {
+  font-size: 0.85rem;
+  color: #65a30d;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.uv-display {
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+.uv-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  display: block;
+}
+.uv-value {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  display: block;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+.uv-level {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: block;
+}
+.safety-precautions h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+.safety-precautions ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: left;
+}
+.safety-precautions li {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.safety-precautions li::before {
+  content: '•';
+  color: #f59e0b;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}

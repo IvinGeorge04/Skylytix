@@ -1,0 +1,47 @@
+/* src/pages/ResultsPage.css */
+.status-message {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 4rem;
+}
+.status-message.error {
+    color: #D32F2F;
+}
+
+.results-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    border: 1px solid transparent;
+}
+
+.summary-level {
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.summary-item p {
+    margin: 0;
+}
+
+.summary-high { background-color: #FDECEA; border-color: #F5C6CB; }
+.summary-high .summary-level { background-color: #DC3545; }
+
+.summary-moderate { background-color: #FFF3CD; border-color: #FFEEBA; }
+.summary-moderate .summary-level { background-color: #FFC107; }
+
+.summary-low { background-color: #D4EDDA; border-color: #C3E6CB; }
+.summary-low .summary-level { background-color: #28A745; }

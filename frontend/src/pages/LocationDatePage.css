@@ -1,0 +1,26 @@
+/* src/pages/LocationDatePage.css */
+.location-date-page .content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.map-wrapper {
+  margin-top: 1rem;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.query-summary p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.query-summary strong {
+  color: var(--text-color);
+}

@@ -1,0 +1,24 @@
+/* src/pages/AboutPage.css */
+.about-page h3 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.api-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.api-links a {
+    text-decoration: none;
+    width: auto;
+    background-color: #eaf2fa;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.api-links a:hover {
+    background-color: #d8e6f5;
+}
