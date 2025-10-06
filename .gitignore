@@ -17,6 +17,8 @@ build/
 .next/
 out/
 coverage/
+.vercel/
+.vercel
 
 # === IDE and system files ===
 .vscode/
