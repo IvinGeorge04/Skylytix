@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '../context/QueryContext';
+import { ENDPOINTS } from '../config/api';
 import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
@@ -25,7 +26,7 @@ const ResultsPage = () => {
       try {
         setLoading(true);
         // Call the forecast endpoint on your server
-        const response = await axios.post('http://localhost:3001/api/weather', {
+        const response = await axios.post(ENDPOINTS.WEATHER, {
           latitude: location.lat,
           longitude: location.lng
         });

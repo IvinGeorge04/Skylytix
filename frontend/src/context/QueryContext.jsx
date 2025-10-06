@@ -1,6 +1,7 @@
 // src/context/QueryContext.jsx
 import React, { createContext, useState, useContext } from 'react';
 import axios from 'axios';
+import { ENDPOINTS } from '../config/api';
 
 const QueryContext = createContext();
 
@@ -64,7 +65,7 @@ export const QueryProvider = ({ children }) => {
     };
     
     try {
-        const response = await axios.post('http://localhost:3001/api/power', queryParams);
+        const response = await axios.post(`${ENDPOINTS.WEATHER}/power`, queryParams);
         setResults(response.data);
     } catch (err) {
         setError('Failed to fetch weather data. Please try again.');

@@ -1,6 +1,7 @@
 // src/pages/HomePage.jsx
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
+import { ENDPOINTS } from '../config/api';
 import axios from 'axios'; // Import axios to make API calls
 import './HomePage.css';
 
@@ -53,7 +54,7 @@ const HomePage = () => {
       setResults(null);
       
       // Make a direct call to your new Open-Meteo backend endpoint
-      const response = await axios.post('http://localhost:3001/api/weather', {
+      const response = await axios.post(ENDPOINTS.WEATHER, {
         latitude: lat,
         longitude: lon
       });

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from '../context/QueryContext';
+import { ENDPOINTS } from '../config/api';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import { Line } from 'react-chartjs-2';
@@ -24,7 +25,7 @@ const HistoricalTrendsPage = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.post('http://localhost:3001/api/historical', {
+      const response = await axios.post(ENDPOINTS.HISTORICAL, {
         latitude: location.lat,
         longitude: location.lng,
         startDate: formatApiDate(startDate),
