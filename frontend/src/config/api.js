@@ -1,7 +1,7 @@
 // src/config/api.js
 
 // Get the backend URL from environment variable with a fallback
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3001';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://skylytix.onrender.com';
 
 // API endpoints
 const ENDPOINTS = {
